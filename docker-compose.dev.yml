@@ -1,0 +1,21 @@
+version: '3.5'
+
+services:
+
+  bot:
+    container_name: bot-template
+    build:
+      context: ./
+    restart: always
+    env_file:
+      - .env.sample
+    volumes:
+      - .:/src
+    environment:
+      MONGODB_HOSTNAME: $MONGODB_HOSTNAME
+    networks:
+      - botnet
+
+networks:
+  botnet:
+    driver: bridge

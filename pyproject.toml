@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "aiogram-template"
+version = "0.1.0"
+description = ""
+authors = ["rdfsx <m315498@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiogram = "3.0.0b5"
+beanie = "^1.12.1"
+uvloop = "^0.17.0"
+ujson = "^5.1.0"
+aiohttp = {extras = ["speedups"], version = "^3.8.1"}
+environs = "^9.3.4"
+loguru = "0.6.0"
+aiolimiter = "^1.0.0"
+asgiref = "^3.5.2"
+aiogram-dialog = "2.0.0b11"
+black = "^23.1.0"
+isort = "^5.10.1"
+taskiq = "0.1.8"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
